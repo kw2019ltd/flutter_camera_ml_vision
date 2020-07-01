@@ -14,12 +14,15 @@ dependencies:
   flutter:
     sdk: flutter
 
-  firebase_ml_vision: ^0.9.3+5
-  flutter_widgets: ^0.1.11
-  path_provider: ^1.6.0
+  firebase_ml_vision: ^0.9.4
+  flutter_widgets: ^0.1.12
+  path_provider: ^1.6.11
   pedantic: ^1.8.0+1
-  device_info: ^0.4.1+4
-  camera: ^0.5.7+3
+  device_info: ^0.4.2+4
+  camera:
+    git:
+      url: git://github.com/kw2019ltd/plugins.git
+      path: packages/camera
 
 dev_dependencies:
   flutter_test:
