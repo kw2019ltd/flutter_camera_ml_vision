@@ -14,7 +14,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  firebase_ml_vision: ^0.9.4
+  firebase_ml_vision: ^0.9.5
   flutter_widgets: ^0.1.12
   path_provider: ^1.6.11
   pedantic: ^1.8.0+1
