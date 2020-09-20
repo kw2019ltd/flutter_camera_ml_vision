@@ -269,7 +269,7 @@ class CameraMlVisionState<T> extends State<CameraMlVision<T>>
     }
 
     Widget cameraPreview = AspectRatio(
-      aspectRatio: _cameraController.value.aspectRatio,
+      aspectRatio: _cameraController.value.previewSize != null ? _cameraController.value.aspectRatio : 16.0/9.0,
       child: _isStreaming
           ? CameraPreview(
               _cameraController,
