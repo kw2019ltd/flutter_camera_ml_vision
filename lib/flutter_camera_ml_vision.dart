@@ -292,9 +292,13 @@ class CameraMlVisionState<T> extends State<CameraMlVision<T>>
         alignment: Alignment.center,
         fit: BoxFit.cover,
         child: SizedBox(
-          width: _cameraController.value.previewSize.height *
-              _cameraController.value.aspectRatio,
-          height: _cameraController.value.previewSize.height,
+          width: _cameraController.value.previewSize != null
+              ? _cameraController.value.previewSize.height *
+                  _cameraController.value.aspectRatio
+              : 9.0,
+          height: _cameraController.value.previewSize != null
+              ? _cameraController.value.previewSize.height
+              : 16,
           child: cameraPreview,
         ),
       ),
