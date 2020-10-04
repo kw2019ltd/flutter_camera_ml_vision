@@ -20,7 +20,7 @@ packages:
     description:
       path: "packages/camera"
       ref: HEAD
-      resolved-ref: "3a800417bc7205bc6e6891483d855016e131b4c6"
+      resolved-ref: "6d7c793725904c21b090a330f20061d1e6a205e0"
       url: "git://github.com/kw2019ltd/plugins.git"
     source: git
     version: "0.5.8+7"
