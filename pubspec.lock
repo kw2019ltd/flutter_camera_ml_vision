@@ -20,10 +20,10 @@ packages:
     description:
       path: "packages/camera"
       ref: HEAD
-      resolved-ref: "6d7c793725904c21b090a330f20061d1e6a205e0"
+      resolved-ref: fe53d97e44e4f1cd8cc80e5f2a8aeef6974fd545
       url: "git://github.com/kw2019ltd/plugins.git"
     source: git
-    version: "0.5.8+7"
+    version: "0.5.8+8"
   characters:
     dependency: transitive
     description:
@@ -124,7 +124,7 @@ packages:
       name: html
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.14.0+3"
+    version: "0.14.0+4"
   intl:
     dependency: transitive
     description:
