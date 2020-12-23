@@ -19,10 +19,7 @@ dependencies:
   path_provider: ^1.6.24
   pedantic: ^1.9.0
   device_info: ^1.0.0
-  camera:
-    git:
-      url: git://github.com/kw2019ltd/plugins.git
-      path: packages/camera
+  camera: ^0.6.2+1
 
 dev_dependencies:
   flutter_test:
