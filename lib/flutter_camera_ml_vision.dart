@@ -340,6 +340,12 @@ class CameraMlVisionState<T> extends State<CameraMlVision<T>>
     }
   }
 
+  void setFlashMode(FlashMode mode) {
+    if (_cameraController != null) {
+      _cameraController.setFlashMode(mode);
+    }
+  }
+
   Widget _getPicture() {
     if (_lastImage != null) {
       final file = File(_lastImage);
