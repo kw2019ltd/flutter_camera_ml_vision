@@ -1,3 +1,12 @@
+## [3.0.1] - 30/04/2021
+
+- update deps
+- fix camera distortion
+
+## [3.0.0] - 17/04/2021
+
+- migrate to null safety
+
 ## [2.3.0] - 03/10/2020
 
 - fix NPE on aspect ratio
