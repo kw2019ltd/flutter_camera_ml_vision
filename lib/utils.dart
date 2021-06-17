@@ -7,12 +7,6 @@ Future<CameraDescription?> _getCamera(CameraLensDirection dir) async {
   return camera ?? (cameras.isEmpty ? null : cameras.first);
 }
 
-Uint8List _concatenatePlanes(List<Plane> planes) {
-  final allBytes = WriteBuffer();
-  planes.forEach((plane) => allBytes.putUint8List(plane.bytes));
-  return allBytes.done().buffer.asUint8List();
-}
-
 Future<T> _detect<T>(
   CameraImage image,
   HandleDetection<T> handleDetection,
@@ -22,13 +16,13 @@ Future<T> _detect<T>(
 }
 
 InputImage _processCameraImage(CameraImage image) {
-  final WriteBuffer allBytes = WriteBuffer();
-  for (Plane plane in image.planes) {
+  final allBytes = WriteBuffer();
+  for (var plane in image.planes) {
     allBytes.putUint8List(plane.bytes);
   }
   final bytes = allBytes.done().buffer.asUint8List();
 
-  final Size imageSize = Size(image.width.toDouble(), image.height.toDouble());
+  final imageSize = Size(image.width.toDouble(), image.height.toDouble());
 
   final imageRotation = InputImageRotation.Rotation_0deg;
 
